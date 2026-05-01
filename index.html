@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font pour le <i> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/light-dark.css">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <title>AnoFinder</title>
+</head>
+<body data-theme="dark">
+    <main>
+        <div class="light-dark">
+            <button id="change-theme" type="button"></button>
+        </div>
+        <div class="home">
+            <div class="logo-name">
+                <div class="logo">
+                    <img id="logo-white" src="assets/logo_white.png" alt="AnoFinder">
+                    <img id="logo-black" src="assets/logo_black.png" alt="AnoFinder">
+                </div>
+                <h1>AnoFinder</h1>
+            </div>
+            <div class="search">
+                <form id="searchForm">
+                    <input id="search" type="search" autocomplete="off" placeholder="Search a website">
+                    <button id="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/changeTheme.js" defer></script>
+    <script src="js/changePage.js" defer></script>
+    <script src="js/tap.js" defer></script>
+</body>
+</html>

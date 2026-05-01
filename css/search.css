@@ -1,0 +1,124 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #141414;
+    --font-color: #ffffff;
+    --border-color: #00ffff;
+    --transparent-color: #969696;
+}
+
+.no-transition * {
+    transition: none !important;
+}
+
+* {
+    transition: all 0.2s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    
+    font-family: "Roboto", sans-serif;
+    
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo-name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.logo-name img {
+    color: var(--font-color);
+
+    height: 50px;
+    width: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+
+    border: 3px solid var(--border-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search input {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    
+    border: none;
+    outline: none;
+    
+    font-weight: 700;
+    font-size: 14px;
+
+    padding-left: 20px;
+    height: 5vh;
+    width: 475px;
+}
+
+.search button {
+    background-color: var(--bg-color);
+    color: var(--transparent-color);
+    
+    cursor: pointer;
+    border: none;
+
+    padding-right: 20px;
+}
+
+.search button:hover {
+    color: var(--border-color);
+    scale: 1.25;
+}
+
+.fa-globe {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+.logo {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* état initial */
+#logo-white { opacity: 1; }
+#logo-black { opacity: 0; }
+
+/* thème clair */
+body[data-theme="light"] #logo-white { opacity: 0; }
+body[data-theme="light"] #logo-black { opacity: 1; }

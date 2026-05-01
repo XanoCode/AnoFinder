@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font pour le <i> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/finding.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+
+    <title>AnoFinder - Results</title>
+</head>
+<body>
+    <header>
+        <a class="logo-link" href="/website/">
+            <div class="logo-name">
+                <img src="../assets/logo_white.png" alt="AnoFinder">
+                <h1>AnoFinder</h1>
+            </div>
+        </a>
+
+        <div class="search">
+            <form id="searchForm">
+                <input id="search" type="search" autocomplete="off" placeholder="Search a website">
+                <button id="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div id="finding"></div>
+    </main>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

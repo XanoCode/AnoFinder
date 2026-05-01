@@ -1,0 +1,25 @@
+.light-dark {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 20vh;
+    padding-right: 150px;
+}
+
+.light-dark button {
+    background-color: var(--bg-color);
+    box-shadow: inset 5px -5px var(--font-color);
+
+    border: none;
+    border-radius: 50%;
+
+    height: 25px;
+    width: 25px;
+
+    transition: all 0.2s ease;
+}
+
+.light-dark button:hover {
+    scale: 1.5;
+}

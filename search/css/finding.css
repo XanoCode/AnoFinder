@@ -1,0 +1,43 @@
+/* All class generate with JavaScript. */
+
+.fa-globe {
+    font-size: 20px;
+    color: white
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0px 150px;
+    margin-top: 25px;
+}
+
+.favicon-name {
+    display: flex;
+    gap: 10px;
+
+    height: auto;
+}
+
+.favicon-name a {
+    text-decoration: none;
+}
+
+.favicon-name img {
+    height: 20px;
+    width: auto;
+}
+
+.url {
+    color: rgb(150, 150, 150);
+}
+
+.description {
+    color: rgb(230, 230, 230);
+
+    margin: 0px;
+    margin-top: 10px;
+    width: 475px;
+}
